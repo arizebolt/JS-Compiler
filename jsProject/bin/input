@@ -1,0 +1,22 @@
+if (age < 18) {
+  console.log("You are not old enough to vote.");
+} else if (age < 21) {
+  console.log("You can vote, but you cannot drink alcohol.");
+} else {
+  console.log("You can vote and drink alcohol.");
+}
+
+const titleElement = document.getElementById('mainTitle');
+const paragraphElement = document.getElementById('paragraph');
+const imageElement = document.getElementById('mainImage');
+
+titleElement.textContent = 'New Title';
+
+setInterval(() => {
+    paragraphElement.style.display = paragraphElement.style.display === 'none' ? 'block' : 'none';
+}, 2000);
+
+setTimeout(() => {
+    imageElement.src = 'new-image.jpg';
+    imageElement.alt = 'New Image Alt Text';
+}, 5000);
